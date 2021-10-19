@@ -1,0 +1,29 @@
+{
+    "data":
+        [
+            {
+                "name":"GO-RIDE"
+            },
+            {
+                "name":"GO-CAR"
+            },
+            {
+                "name":"GO-BLUEBIRD"
+            },
+            {
+                "name":"GO-SEND"
+            },
+            {
+                "name":"GO-DEALS"
+            },
+            {
+                "name":"GO-PULSA"
+            },
+            {
+                "name":"GO-FOOD"
+            },
+            {
+                "name":"MORE"
+            }
+        ]
+}
