@@ -1,6 +1,7 @@
 import React from 'react';
 import {StyleSheet, Text, View, Image} from 'react-native';
 import {IcGoPay, IcMore, IcNearBy, IcPay, IcTopUp} from '../../../assets';
+import {GoMenuItem} from '../../molecules';
 
 const GoMenu = () => {
   return (
@@ -19,30 +20,11 @@ const GoMenu = () => {
           Rp. 50.000
         </Text>
       </View>
-      <View
-        style={{
-          flexDirection: 'row',
-          padding: 17,
-          backgroundColor: '#2f65bd',
-          borderBottomLeftRadius: 4,
-          borderBottomRightRadius: 4,
-        }}>
-        <View style={styles.item}>
-          <Image source={IcPay} />
-          <Text style={styles.itemTextGopay}>Pay</Text>
-        </View>
-        <View style={styles.item}>
-          <Image source={IcNearBy} />
-          <Text style={styles.itemTextGopay}>NearBy</Text>
-        </View>
-        <View style={styles.item}>
-          <Image source={IcTopUp} />
-          <Text style={styles.itemTextGopay}>Top Up</Text>
-        </View>
-        <View style={styles.item}>
-          <Image source={IcMore} />
-          <Text style={styles.itemTextGopay}>More</Text>
-        </View>
+      <View style={styles.goMenu}>
+        <GoMenuItem key={1} name="Pay" icon={IcPay} />
+        <GoMenuItem key={2} name="NearBy" icon={IcNearBy} />
+        <GoMenuItem key={3} name="Top Up" icon={IcTopUp} />
+        <GoMenuItem key={4} name="More" icon={IcMore} />
       </View>
     </View>
   );
@@ -51,14 +33,11 @@ const GoMenu = () => {
 export default GoMenu;
 
 const styles = StyleSheet.create({
-  item: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  itemTextGopay: {
-    color: '#fff',
-    fontSize: 13,
-    fontWeight: 'bold',
+  goMenu: {
+    flexDirection: 'row',
+    padding: 17,
+    backgroundColor: '#2f65bd',
+    borderBottomLeftRadius: 4,
+    borderBottomRightRadius: 4,
   },
 });

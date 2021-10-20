@@ -1,3 +1,4 @@
 import Menu from './Menu';
 import NavButton from './NavButton';
-export {Menu, NavButton};
+import GoMenuItem from './GoMenuItem';
+export {Menu, NavButton, GoMenuItem};
